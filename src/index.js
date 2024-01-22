@@ -9,6 +9,10 @@ function navComponent() {
     const contactLink = document.createElement('a');
     const menuLink = document.createElement('a');
 
+    aboutUsLink.classList.add('nav-link');
+    contactLink.classList.add('nav-link');
+    menuLink.classList.add('nav-link');
+
     aboutUsLink.textContent = 'About Us';
     aboutUsLink.href = '#';
     contactLink.textContent = 'Hours & Locations';
