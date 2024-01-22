@@ -40,7 +40,7 @@ function bodyComponent() {
     titleCard.innerHTML = `
         <div class='logo'></div>
         <hr>
-        <h2 class="cuisine-title">JAPANESE<h2>
+        <h2 class="cuisine-title">JAPANESE</h2>
         <h1 class="main-title">SUSHI <span class="and-symbol">&</span> POKE</h1>
         <hr>
     `;
