@@ -65,4 +65,11 @@ body {
     width: 80px;
     background-image: url('./image/salmon-sushi-logo.png');
     background-size: cover;
+    margin: 12px auto 8px;
+}
+
+hr {
+    width: 70%;
+    border: none;
+    border-top: 1px solid #1A1A1A;
 }
