@@ -16,7 +16,7 @@ body {
 .nav-link {
     display: inline-block;
     position: relative;
-    color: var(--font-color);
+    color: var(--red-color);
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -24,7 +24,7 @@ body {
     margin: 12px 20px;
 } 
 
-.nav-link:after {
+.nav-link::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -32,12 +32,12 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--font-color);
+    background-color: var(--red-color);
     transform-origin: center;
     transition: transform 0.25s ease-out;
 }
 
-.nav-link:hover:after {
+.nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: center;
 }
