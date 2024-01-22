@@ -1,4 +1,42 @@
+:root {
+    --font-color: #AB1507;
+}
+
 body {
+    max-height: 100vh;
     background-color: #D0C9BF;
-    color: #AB1507;
+}
+
+.links {
+    width: fit-content;
+    margin: 16px auto;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: var(--font-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 16px 20px;
+} 
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--font-color);
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
 }
