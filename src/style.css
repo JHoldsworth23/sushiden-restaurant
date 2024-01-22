@@ -90,3 +90,12 @@ hr:last-child {
     text-align: center;
     font-size: 1.2rem;
 }
+
+i[class*="github"] {
+    font-size: 1.5rem;
+    color: var(--red-color);
+}
+
+i[class*="github"]:hover {
+    color: #1A1A1A;
+}
