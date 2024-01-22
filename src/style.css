@@ -73,3 +73,20 @@ hr {
     border: none;
     border-top: 1px solid #1A1A1A;
 }
+
+hr:last-child {
+    margin-bottom: 16px;
+}
+
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+}
