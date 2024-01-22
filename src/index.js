@@ -1,4 +1,5 @@
 import './style.css';
+import Logo from './image/salmon-sushi-logo.png';
 
 function navComponent() {
     const content = document.querySelector('#content');
@@ -34,14 +35,11 @@ function bodyComponent() {
     const background = document.createElement('div');
     background.classList.add('background');
 
-    // const logoImg = document.createElement('img');
-    // logoImg.classList.add('logo');
-    // logoImg.src = './src/image/salmon-sushi-logo.png';
-
     const titleCard = document.createElement('div');
     titleCard.classList.add('title-card');
 
     titleCard.innerHTML = `
+        <div class='logo'></div>
         <hr>
         <h2 class="cuisine-title">JAPANESE<h2>
         <h1 class="main-title">SUSHI <span class="and-symbol">&</span> POKE</h1>
