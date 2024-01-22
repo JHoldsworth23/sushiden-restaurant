@@ -1,10 +1,11 @@
 :root {
-    --font-color: #AB1507;
+    --red-color: #AB1507;
+    --cream-color: #D0C9BF;
 }
 
 body {
     max-height: 100vh;
-    background-color: #D0C9BF;
+    background-color: var(--cream-color);
 }
 
 .links {
@@ -20,7 +21,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    margin: 16px 20px;
+    margin: 12px 20px;
 } 
 
 .nav-link:after {
@@ -48,13 +49,20 @@ body {
     height: 80vh;
     width: 95vw;
     margin: 0 auto;
-    background-image: url(/src/image/sushi-background.jpg);
+    background-image: url('./image/sushi-background.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 24px;
 }
 
 .title-card {
-    width: 150px;
-    background-color: #AB1507;
+    width: 250px;
+    background-color: var(--cream-color);
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    background-image: url('./image/salmon-sushi-logo.png');
+    background-size: cover;
 }
