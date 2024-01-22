@@ -34,17 +34,20 @@ function bodyComponent() {
     const background = document.createElement('div');
     background.classList.add('background');
 
+    // const logoImg = document.createElement('img');
+    // logoImg.classList.add('logo');
+    // logoImg.src = './src/image/salmon-sushi-logo.png';
+
     const titleCard = document.createElement('div');
     titleCard.classList.add('title-card');
 
-    const line = document.createElement('hr');
-    const title = document.createElement('h1');
+    titleCard.innerHTML = `
+        <hr>
+        <h2 class="cuisine-title">JAPANESE<h2>
+        <h1 class="main-title">SUSHI <span class="and-symbol">&</span> POKE</h1>
+        <hr>
+    `;
 
-    title.textContent = 'Sushi & Poke';
-
-    titleCard.appendChild(line);
-    titleCard.appendChild(title);
-    titleCard.appendChild(line.cloneNode());
     background.appendChild(titleCard);
     content.appendChild(background);
 
