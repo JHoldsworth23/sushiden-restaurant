@@ -1,3 +1,5 @@
+import './style.css';
+
 function navComponent() {
     const content = document.querySelector('#content');
     const linkDiv = document.createElement('div');
