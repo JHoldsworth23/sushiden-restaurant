@@ -1,5 +1,4 @@
 import './style.css';
-import Logo from './image/salmon-sushi-logo.png';
 
 function navComponent() {
     const content = document.querySelector('#content');
