@@ -20,7 +20,7 @@ body {
     display: inline-block;
     position: relative;
     color: var(--red-color);
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -32,8 +32,8 @@ body {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
+    height: 3px;
+    bottom: -2px;
     left: 0;
     background-color: var(--red-color);
     transform-origin: center;
