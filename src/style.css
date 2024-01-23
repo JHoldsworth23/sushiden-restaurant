@@ -58,7 +58,7 @@ body {
 .title-card {
     width: 250px;
     background-color: var(--cream-color);
-    padding: 0 20px;
+    padding: 8px;
 }
 
 .logo {
@@ -84,6 +84,19 @@ hr:last-child {
     letter-spacing: 3px;
     text-align: center;
     margin: 0;
+}
+
+.main-title {
+    position: relative;
+    left: 22px;
+    font-size: 4.1rem;
+    line-height: 0.8;
+    margin: 16px 0;
+}
+
+.and-symbol {
+    display: inline-block;
+    font-size: 3.2rem;
 }
 
 .footer-section {
