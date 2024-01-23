@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Londrina+Outline&display=swap');
 
 :root {
     --red-color: #AB1507;
@@ -8,7 +8,7 @@
 body {
     max-height: 100vh;
     background-color: var(--cream-color);
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: 'Antonio', sans-serif;
 }
 
 .links {
@@ -84,7 +84,7 @@ hr:last-child {
 
 .cuisine-title {
     font-family: 'Londrina Outline', sans-serif;
-    font-size: 2.2rem;
+    font-size: 3rem;
     letter-spacing: 3px;
     text-align: center;
     margin: 0;
