@@ -1,4 +1,4 @@
-function footerComponent() {
+const footerComponent = () => {
     const content = document.querySelector('#content');
     const footer = document.createElement('div');
     footer.classList.add('footer-section');
