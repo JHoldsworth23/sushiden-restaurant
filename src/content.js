@@ -1,24 +1,24 @@
-// const bodyComponent = () => {
-//     const content = document.querySelector('#content');
-//     const background = document.createElement('div');
-//     background.classList.add('background');
+const bodyComponent = () => {
+    const content = document.querySelector('#content');
+    const background = document.createElement('div');
+    background.classList.add('home-background');
 
-//     const titleCard = document.createElement('div');
-//     titleCard.classList.add('title-card');
+    const titleCard = document.createElement('div');
+    titleCard.classList.add('title-card');
 
-//     titleCard.innerHTML = `
-//         <div class='logo'></div>
-//         <hr>
-//         <h2 class="cuisine-title">JAPANESE</h2>
-//         <h1 class="main-title">SUSHI <span class="and-symbol">& POKE</span></h1>
-//         <hr>
-//     `;
+    titleCard.innerHTML = `
+        <div class='logo'></div>
+        <hr>
+        <h2 class="cuisine-title">JAPANESE</h2>
+        <h1 class="main-title">SUSHI <span class="and-symbol">& POKE</span></h1>
+        <hr>
+    `;
 
-//     background.appendChild(titleCard);
-//     content.appendChild(background);
+    background.appendChild(titleCard);
+    content.appendChild(background);
 
-//     return content;    
-// }
+    return content;    
+}
 
 const restaurant = (location, address, country, contact, container) => {
     const information = document.createElement('div');
