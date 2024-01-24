@@ -12,8 +12,23 @@ body {
 }
 
 .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     margin: 16px auto;
+}
+
+.home-link {
+    position: relative;
+    right: 50px;
+}
+
+.home-link > div {
+    width: 40px;
+    height: 40px;
+    background-image: url('./image/salmon-sushi-logo.png');
+    background-size: cover;
 }
 
 .nav-link {
