@@ -1,4 +1,4 @@
-function navComponent() {
+const homeNavComponent = () => {
     const content = document.querySelector('#content');
     const linkDiv = document.createElement('div');
     linkDiv.classList.add('links');
@@ -27,4 +27,5 @@ function navComponent() {
     return content;
 }
 
-export default navComponent;
+
+export default homeNavComponent;

@@ -1,4 +1,4 @@
-import navComponent from './navigation';
+import homeNavComponent from './navigation';
 import footerComponent from './footer';
 import './style.css';
 
@@ -24,6 +24,6 @@ function bodyComponent() {
     return content;    
 }
 
-document.body.appendChild(navComponent());
+document.body.appendChild(homeNavComponent());
 document.body.appendChild(bodyComponent());
 document.body.appendChild(footerComponent());
