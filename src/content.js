@@ -55,7 +55,11 @@ const locationComponent = () => {
 
     restaurants.forEach((obj) => restaurant(obj.location, obj.address, obj.country, obj.contact, gridContainer));
 
+    const title = document.createElement('h2');
+    title.textContent = 'Contact us to make a reservation';
+
     locationBackground.appendChild(gridContainer);
+    locationBackground.appendChild(title);
     content.appendChild(locationBackground);
 
     return content;
