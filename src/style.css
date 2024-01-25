@@ -127,7 +127,7 @@ hr:last-child {
 }
 
 .grid-container {
-    width: 65%;
+    width: min(750px, 55%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
