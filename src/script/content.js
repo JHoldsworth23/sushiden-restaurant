@@ -24,13 +24,13 @@ const restaurant = (location, address, country, contact, container) => {
     const information = document.createElement('div');
     information.classList.add('grid-item');
     const [streetName, zipCode, ...name] = address.split(',');
-    const [phoneNo, email] = contact.split(',')
+    const [phoneNo, email] = contact.split(',');
 
     information.innerHTML = `
         <h2>${location}</h2>
         <p>${streetName}</p>
         <p>${zipCode}</p>
-        <p>${name}</p>
+        ${name.length > 0 ? `<p>${name}</p>` : ''}
         <p>${country}</p>
         <h3>${phoneNo}</h3>
         <h3>${email}</h3>
