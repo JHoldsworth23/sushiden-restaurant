@@ -9,7 +9,7 @@ const bodyComponent = () => {
     titleCard.innerHTML = `
         <div class='logo'></div>
         <hr>
-        <h2 class="cuisine-title">JAPANESE</h2>
+        <h1 class="cuisine-title">JAPANESE</h1>
         <h1 class="main-title">SUSHI <span class="and-symbol">& POKE</span></h1>
         <hr>
     `;
@@ -32,8 +32,10 @@ const restaurant = (location, address, country, contact, container) => {
         <p>${zipCode}</p>
         ${name.length > 0 ? `<p>${name}</p>` : ''}
         <p>${country}</p>
-        <h3>${phoneNo}</h3>
-        <h3>${email}</h3>
+        <div class="contact">
+            <h3>${phoneNo}</h3>
+            <h3>${email}</h3>
+        </div>
     `;
 
     container.appendChild(information);
