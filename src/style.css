@@ -145,7 +145,7 @@ hr:last-child {
     border-radius: 16px;
 }
 
-.grid-container > h2 {
+.grid-item > h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
