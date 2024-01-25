@@ -31,6 +31,10 @@ body {
     background-size: cover;
 }
 
+.home-link > div:hover {
+    filter: contrast(200%);
+}
+
 .nav-link {
     display: inline-block;
     position: relative;
