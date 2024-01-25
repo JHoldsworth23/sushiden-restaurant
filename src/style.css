@@ -127,7 +127,7 @@ hr:last-child {
 }
 
 .grid-container {
-    width: 55%;
+    width: 65%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -146,17 +146,30 @@ hr:last-child {
 }
 
 .grid-item > h2 {
+    font-size: 1.65rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
 
 h2 ~ p {
+    font-size: 1.15rem;
     margin: 6px;
 }
 
 .contact {
+    font-size: 1.15rem;
     margin-top: 20px;
+}
+
+.grid-container + h2 {
+    background-color: var(--red-color);
+    color: var(--cream-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px;
+    border-radius: 20px;
 }
 
 .footer-section {
