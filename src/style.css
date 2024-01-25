@@ -134,10 +134,29 @@ hr:last-child {
 }
 
 .grid-item {
-    background-color: #D0C9BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space;
+    background-color: var(--cream-color);
     text-align: center;
+    line-height: 0.9;
     padding: 20px;
     border-radius: 16px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h2 ~ p {
+    margin: 6px;
+}
+
+.contact {
+    margin-top: 20px;
 }
 
 .footer-section {
