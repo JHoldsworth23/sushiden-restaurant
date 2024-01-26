@@ -79,6 +79,7 @@ const menuGrid = (sushi, japanese, description, container) => {
     gridItem.classList.add('menu-grid-item');
 
     gridItem.innerHTML = `
+        <div class="${sushi}-img"></div>
         <h3>${sushi}</h3>
         <p>${japanese}</p>
         <p>${description}</p>
