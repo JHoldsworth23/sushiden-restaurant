@@ -50,9 +50,9 @@ const locationComponent = () => {
     gridContainer.classList.add('grid-container');
 
     const restaurants = [
-        {location: 'London', address: 'Kensington High St, W8 7RG', country: 'United Kingdom', contact: '+44 63421 016174, sushidenuk@email.com'},
-        {location: 'Tokyo', address: 'Shibuya City, Maruyamacho, Building 2nd Floor', country: 'Japan', contact: '+81 82-5238-4234, sushidenjp@email.com'},
-        {location: 'Los Angeles', address: 'Sunset Blvd, CA 90026, California', country: 'United States', contact: '+1 (213) 555-7372, sushidenus@email.com'},
+        {location: 'London', address: 'Kensington High St, W8 7RG', country: 'United Kingdom', times: 'Monday - Saturday, 12:00 - 15:00, 18:00 - 23:00, Sunday, 12:00 - 15:00, 18:00 - 22:30', contact: '+44 63421 016174, sushidenuk@email.com'},
+        {location: 'Tokyo', address: 'Shibuya City, Maruyamacho, Building 2nd Floor', times: 'Monday - Saturday, 12:00 - 15:00, 18:00 - 00:00, Sunday, Closed' , country: 'Japan', contact: '+81 82-5238-4234, sushidenjp@email.com'},
+        {location: 'Los Angeles', address: 'Sunset Blvd, CA 90026, California', country: 'United States', times: 'Monday - Friday, 11:00 - 14:00, 17:00 - 21:30, Saturday - Sunday, Closed' , contact: '+1 (213) 555-7372, sushidenus@email.com'},
     ];
 
     restaurants.forEach((obj) => restaurant(obj.location, obj.address, obj.country, obj.contact, gridContainer));
