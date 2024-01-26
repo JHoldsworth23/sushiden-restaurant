@@ -171,7 +171,7 @@ h2 ~ p {
 }
 
 .menu-grid {
-    width: min(750px, 55%);
+    width: min(750px, 60%);
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 20px;
@@ -179,8 +179,26 @@ h2 ~ p {
 
 .menu-grid-item {
     background-color: #D0C9BF;
-    padding: 12px;
+    padding: 12px 20px;
     border-radius: 16px;
+}
+
+.menu-grid-item > h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h3 + p {
+    font-size: 1.1rem;
+    text-align: center;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.menu-grid-item > p:last-child {
+    line-height: 1.4;
 }
 
 i[class*="clock"] {
