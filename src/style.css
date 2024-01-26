@@ -170,6 +170,19 @@ h2 ~ p {
     margin: 14px 0;
 }
 
+.menu-grid {
+    width: min(750px, 55%);
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-grid-item {
+    background-color: #D0C9BF;
+    padding: 12px;
+    border-radius: 16px;
+}
+
 i[class*="clock"] {
     font-size: 1.2rem;
     margin: 2px 0;
