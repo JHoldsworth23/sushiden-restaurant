@@ -220,6 +220,12 @@ h2 ~ p {
     background-image: url('./image/sushi-types/temaki.png');
 }
 
+#poke-img {
+    width: 80px;
+    height: 80px;
+    background-image: url('./image/sushi-types/poke.png');
+}
+
 #uramaki-img {
     background-image: url('./image/sushi-types/uramaki.png');
 }
