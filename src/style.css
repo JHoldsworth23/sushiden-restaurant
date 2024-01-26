@@ -64,7 +64,7 @@ body {
     transform-origin: center;
 }
 
-.home-background, .location-background {
+.home-background, .location-background, .menu-background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +83,11 @@ body {
 .location-background {
     flex-direction: column;
     background-image: url('./image/restaurant.jpg');
+}
+
+.menu-background {
+    background-image: url('./image/salmon-meat.jpg');
+    filter: contrast(120%);
 }
 
 .title-card {
@@ -130,14 +135,14 @@ hr:last-child {
     font-size: 4.15rem;
 }
 
-.grid-container {
+.location-grid {
     width: min(750px, 55%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.grid-item {
+.location-grid-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,7 +153,7 @@ hr:last-child {
     border-radius: 16px;
 }
 
-.grid-item > h2 {
+.location-grid-item > h2 {
     font-size: 1.65rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -178,7 +183,7 @@ i ~ h4 {
     margin-top: -20px;
 }
 
-.grid-container + h2 {
+.location-grid + h2 {
     background-color: var(--red-color);
     color: var(--cream-color);
     font-size: 1.4rem;
