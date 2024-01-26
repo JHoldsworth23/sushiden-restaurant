@@ -20,11 +20,12 @@ const bodyComponent = () => {
     return content;    
 }
 
-const restaurant = (location, address, country, contact, container) => {
+const restaurant = (location, address, country, times, contact, container) => {
     const information = document.createElement('div');
     information.classList.add('grid-item');
     const [streetName, zipCode, ...name] = address.split(',');
     const [phoneNo, email] = contact.split(',');
+    const openingHours = times.split(',').map(text => text.includes('day') ? `<h4>${text}</h4>` : `<p>${text}</p>`);
 
     information.innerHTML = `
         <h2>${location}</h2>
@@ -32,6 +33,10 @@ const restaurant = (location, address, country, contact, container) => {
         <p>${zipCode}</p>
         ${name.length > 0 ? `<p>${name}</p>` : ''}
         <p>${country}</p>
+        <div class="opening-hours">
+            <i class="fa-regular fa-clock"></i>
+            ${openingHours.join("")}
+        </div>
         <div class="contact">
             <h3>${phoneNo}</h3>
             <h3>${email}</h3>
@@ -55,7 +60,7 @@ const locationComponent = () => {
         {location: 'Los Angeles', address: 'Sunset Blvd, CA 90026, California', country: 'United States', times: 'Monday - Friday, 11:00 - 14:00, 17:00 - 21:30, Saturday - Sunday, Closed' , contact: '+1 (213) 555-7372, sushidenus@email.com'},
     ];
 
-    restaurants.forEach((obj) => restaurant(obj.location, obj.address, obj.country, obj.contact, gridContainer));
+    restaurants.forEach((obj) => restaurant(obj.location, obj.address, obj.country, obj.times, obj.contact, gridContainer));
 
     const title = document.createElement('h2');
     title.textContent = 'Contact us to make a reservation';
