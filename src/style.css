@@ -86,6 +86,7 @@ body {
 }
 
 .menu-background {
+    flex-direction: column;
     background-image: url('./image/salmon-meat.jpg');
     filter: contrast(120%);
 }
