@@ -22,7 +22,7 @@ const bodyComponent = () => {
 
 const restaurant = (location, address, country, times, contact, container) => {
     const information = document.createElement('div');
-    information.classList.add('grid-item');
+    information.classList.add('location-grid-item');
     const [streetName, zipCode, ...name] = address.split(',');
     const [phoneNo, email] = contact.split(',');
     const openingHours = times.split(',').map(text => text.includes('day') ? `<h4>${text}</h4>` : `<p>${text}</p>`);
@@ -52,7 +52,7 @@ const locationComponent = () => {
     locationBackground.classList.add('location-background');
 
     const gridContainer = document.createElement('div');
-    gridContainer.classList.add('grid-container');
+    gridContainer.classList.add('location-grid');
 
     const restaurants = [
         {location: 'London', address: 'Kensington High St, W8 7RG', country: 'United Kingdom', times: 'Monday - Saturday, 12:00 - 15:00, 18:00 - 23:00, Sunday, 12:00 - 15:00, 18:00 - 22:30', contact: '+44 63421 016174, sushidenuk@email.com'},
@@ -69,7 +69,19 @@ const locationComponent = () => {
     locationBackground.appendChild(title);
     content.appendChild(locationBackground);
 
+    // Source of the location background image
+
     return content;
 }
 
-export default locationComponent;
+const menuComponent = () => {
+    const content = document.querySelector('#content');
+    const menuBackground = document.createElement('div');
+    menuBackground.classList.add('menu-background');
+
+    content.appendChild(menuBackground);
+
+    return content;
+}
+
+export default menuComponent;
