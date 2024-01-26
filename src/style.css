@@ -170,6 +170,14 @@ h2 ~ p {
     margin: 14px 0;
 }
 
+.menu-background > h1 {
+    background-color: var(--cream-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 180px;
+    border-radius: 16px;
+}
+
 .menu-grid {
     width: min(750px, 60%);
     display: grid;
@@ -178,7 +186,7 @@ h2 ~ p {
 }
 
 .menu-grid-item {
-    background-color: #D0C9BF;
+    background-color: var(--cream-color);
     padding: 12px 20px;
     border-radius: 16px;
 }
