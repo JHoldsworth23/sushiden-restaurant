@@ -103,7 +103,7 @@ const menuComponent = () => {
         {type: 'Sashimi', jp: '刺身', description: 'Fresh raw fish or meat sliced into thin pieces and often eaten with soy sauce.'},
         {type: 'Maki', jp: '巻き', description: 'Raw fish or vegetables are rolled up in a sheet of roasted seaweed.'},
         {type: 'Temaki', jp: '手巻', description: 'Cold boiled rice moistened with rice vinegar, wrapped together with strips of vegetable or raw fish in a sheet of dried seaweed and rolled into a cone shape.'},
-        {type: 'Poke', description: 'Cubes of marinated sushi grade fish which is then tossed over rice and topped with Asian-inspired sauces.'},
+        {type: 'Poke', jp: '', description: 'Cubes of marinated sushi grade fish which is then tossed over rice and topped with Asian-inspired sauces.'},
         {type: 'Uramaki', jp: '裏巻', description: 'A type of rolled sushi in which the rice is on the outside, rather than rolled up inside the nori.'},
     ];
 
