@@ -1,4 +1,4 @@
-const bodyComponent = () => {
+const homeComponent = () => {
     const content = document.querySelector('#content');
     const background = document.createElement('div');
     background.classList.add('home-background');
@@ -117,4 +117,4 @@ const menuComponent = () => {
     return content;
 }
 
-export default menuComponent;
+export { homeComponent, locationComponent, menuComponent };

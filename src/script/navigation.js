@@ -13,7 +13,7 @@ const homeNavComponent = () => {
     contactLink.classList.add('nav-link');
     menuLink.classList.add('nav-link');
 
-    homeLink.innerHTML = '<div>';
+    homeLink.innerHTML = '<div></div>';
     homeLink.href = '#';
     aboutUsLink.textContent = 'About Us';
     aboutUsLink.href = '#';
