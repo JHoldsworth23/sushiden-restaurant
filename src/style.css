@@ -196,6 +196,32 @@ h2 ~ p {
     width: 70px;
     height: 70px;
     margin: 0 auto;
+    background-color: var(--cream-color);
+    background-size: cover;
+    background-position: center;
+}
+
+#nigiri-img {
+    width: 120px;
+    background-image: url('./image/sushi-types/nigiri.png');
+}
+
+#sashimi-img {
+    width: 100px;
+    background-image: url('./image/sushi-types/sashimi.png');
+}
+
+#maki-img {
+    width: 80px;
+    background-image: url('./image/sushi-types/maki.png');
+}
+
+#temaki-img {
+    background-image: url('./image/sushi-types/temaki.png');
+}
+
+#uramaki-img {
+    background-image: url('./image/sushi-types/uramaki.png');
 }
 
 .menu-grid-item > h3 {
