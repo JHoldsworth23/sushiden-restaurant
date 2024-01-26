@@ -141,11 +141,10 @@ hr:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: space;
     background-color: var(--cream-color);
     text-align: center;
     line-height: 0.9;
-    padding: 20px;
+    padding: 12px;
     border-radius: 16px;
 }
 
@@ -161,9 +160,22 @@ h2 ~ p {
     margin: 6px;
 }
 
+.opening-hours {
+    margin: 14px 0;
+}
+
+i[class*="clock"] {
+    font-size: 1.2rem;
+    margin: 2px 0;
+}
+
+i ~ h4 {
+    margin: 6px;
+}
+
 .contact {
     font-size: 1.15rem;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 .grid-container + h2 {
