@@ -1,3 +1,5 @@
+import source from "./source";
+
 const restaurant = (location, address, country, times, contact, container) => {
     const information = document.createElement('div');
     information.classList.add('location-grid-item');
@@ -42,10 +44,11 @@ const locationComponent = () => {
     const title = document.createElement('h2');
     title.textContent = 'Contact us to make a reservation';
 
+    const imageSource = source('https://www.fumi.restaurant/gallery');
+
     locationBackground.appendChild(gridContainer);
     locationBackground.appendChild(title);
-
-    // Source of the location background image
+    locationBackground.appendChild(imageSource);
 
     return locationBackground;
 }

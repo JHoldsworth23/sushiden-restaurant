@@ -1,3 +1,5 @@
+import source from "./source";
+
 const menuGrid = (sushi, japanese, description, container) => {
     const gridItem = document.createElement('div');
     gridItem.classList.add('menu-grid-item');
@@ -33,8 +35,11 @@ const menuComponent = () => {
 
     menu.forEach(obj => menuGrid(obj.type, obj.jp, obj.description, gridContainer));
 
+    const imageSource = source('https://cotoacademy.com/sushi-names-in-japanese/');
+
     menuBackground.appendChild(title);
     menuBackground.appendChild(gridContainer);
+    menuBackground.appendChild(imageSource);
 
     return menuBackground;
 }
