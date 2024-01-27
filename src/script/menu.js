@@ -35,15 +35,15 @@ const menuComponent = () => {
 
     menuBackground.appendChild(title);
     menuBackground.appendChild(gridContainer);
-    content.appendChild(menuBackground);
 
-    return content;
+    return menuBackground;
 }
 
 const loadMenuPage = () => {
-    const content = document.querySelector('#content');
-    content.textContent = '';
-    content.appendChild(menuComponent);
+    const main = document.querySelector('.main');
+    main.textContent = '';
+    main.appendChild(menuComponent());
+    return main;
 }
 
 export default loadMenuPage;
