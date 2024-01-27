@@ -150,6 +150,44 @@ hr:last-child {
     font-size: 4.15rem;
 }
 
+.welcome-text {
+    width: 600px;
+    background-color: var(--cream-color);
+    padding: 12px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.welcome-text > h1 {
+    font-size: 2.2rem;
+    color: var(--red-color);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin: 2px 0;
+}
+
+.welcome-text > p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.story-text {
+    width: 800px;
+    background-color: var(--cream-color);
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.story-text > h1 {
+    font-size: 2.2rem;
+    color: var(--red-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    margin: 2px 0;
+}
+
 .location-grid {
     width: min(750px, 55%);
     display: grid;
