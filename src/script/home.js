@@ -14,15 +14,15 @@ const homeComponent = () => {
     `;
 
     background.appendChild(titleCard);
-    content.appendChild(background);
 
-    return content;    
+    return background;    
 }
 
 const loadHomePage = () => {
-    const content = document.querySelector('#content');
-    content.textContent = '';
-    content.appendChild(homeComponent);
+    const main = document.querySelector('.main');
+    main.textContent = '';
+    main.appendChild(homeComponent());
+    return main;
 }
 
 export default loadHomePage;
