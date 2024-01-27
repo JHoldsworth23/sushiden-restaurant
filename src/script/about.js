@@ -14,12 +14,16 @@ const aboutComponent = () => {
     storyDiv.classList.add('story-text');
     storyDiv.innerHTML = `
         <h1>Our Story</h1>
+        <div class="story-image">
+            <div class="restaurant"></div>
+            <div class="sushi-chef"></div>
+        </div>
         <h3>2021</h3>
         <p>We opened our first Sushiden restaurant in Shibuya City, Tokyo. We are a family business to forge our passions for crafting authentic sushi dishes and making customers fall in love with exquisite food.</p>
         <h3>2023 - Los Angeles</h3>
         <p>Coming from Tokyo, we knew we wanted to bring the unique and delicate tastes of Japan to the USA. After a successful opening, we dedicated ourselves to expanding restaurants overseas and putting our heart and soul into what we love and serve.</p>
         <h3>2024 - London</h3>
-        <p>Sushiden Restaurant opened the third restaurant on Kensington Street. </p>
+        <p>Sushiden restaurant opened the third restaurant on Kensington Street. </p>
     `;
 
     background.appendChild(welcomeDiv);
