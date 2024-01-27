@@ -175,7 +175,7 @@ hr:last-child {
 .story-text {
     width: 800px;
     background-color: var(--cream-color);
-    padding: 12px;
+    padding: 20px;
     border-radius: 16px;
 }
 
@@ -185,7 +185,45 @@ hr:last-child {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1.3px;
-    margin: 2px 0;
+    margin: 2px 0 10px;
+}
+
+.story-image {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.story-image > div {
+    width: 220px;
+    height: 120px;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.restaurant {
+    background-image: url('./image/journey/restaurant.png');
+}
+
+.sushi-chef {
+    background-image: url('./image/journey/sushi-chef.jpeg');
+}
+
+.story-image ~ h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.story-image ~ p {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    opacity: 1;
+    text-align: start;
+    margin: 0 auto 8px;
 }
 
 .location-grid {
