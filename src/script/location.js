@@ -44,17 +44,17 @@ const locationComponent = () => {
 
     locationBackground.appendChild(gridContainer);
     locationBackground.appendChild(title);
-    content.appendChild(locationBackground);
 
     // Source of the location background image
 
-    return content;
+    return locationBackground;
 }
 
 const loadLocationPage = () => {
-    const content = document.querySelector('#content');
-    content.textContent = '';
-    content.appendChild(locationComponent);
+    const main = document.querySelector('.main');
+    main.textContent = '';
+    main.appendChild(locationComponent());
+    return main;
 }
 
 export default loadLocationPage;
