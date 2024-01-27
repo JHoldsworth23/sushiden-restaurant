@@ -95,11 +95,13 @@ body {
 }
 
 .location-background {
+    position: relative;
     flex-direction: column;
     background-image: url('./image/restaurant.jpg');
 }
 
 .about-background, .menu-background {
+    position: relative;
     flex-direction: column;
     background-image: url('./image/salmon-meat.jpg');
     filter: contrast(120%);
@@ -361,6 +363,24 @@ i ~ h4 {
     letter-spacing: 2px;
     padding: 16px;
     border-radius: 20px;
+}
+
+.source {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 0.8rem;
+    background-color: var(--cream-color);
+    color: #1A1A1A;
+    font-weight: 700;
+    align-self: flex-end;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.source:hover {
+    color: var(--red-color);
 }
 
 .footer-section {
