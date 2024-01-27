@@ -10,7 +10,20 @@ const aboutComponent = () => {
         <p>With over 70 of the most authentic Japanese and Hawaiian fish and vegetarian dishes on the menu, you experience our love and passion for cooking and service. </p>
     `;
 
+    const storyDiv = document.createElement('div');
+    storyDiv.classList.add('story-text');
+    storyDiv.innerHTML = `
+        <h1>Our Story</h1>
+        <h3>2021</h3>
+        <p>We opened our first Sushiden restaurant in Shibuya City, Tokyo. We are a family business to forge our passions for crafting authentic sushi dishes and making customers fall in love with exquisite food.</p>
+        <h3>2023 - Los Angeles</h3>
+        <p>Coming from Tokyo, we knew we wanted to bring the unique and delicate tastes of Japan to the USA. After a successful opening, we dedicated ourselves to expanding restaurants overseas and putting our heart and soul into what we love and serve.</p>
+        <h3>2024 - London</h3>
+        <p>Sushiden Restaurant opened the third restaurant on Kensington Street. </p>
+    `;
+
     background.appendChild(welcomeDiv);
+    background.appendChild(storyDiv);
 
     return background;
 }
