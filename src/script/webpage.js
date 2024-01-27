@@ -1,4 +1,5 @@
 import loadHomePage from "./home";
+import loadAboutPage from "./about";
 import loadLocationPage from "./location";
 import loadMenuPage from "./menu";
 import footerComponent from "./footer";
@@ -21,6 +22,11 @@ const homeNavComponent = () => {
     const aboutUsLink = document.createElement('a');
     aboutUsLink.classList.add('nav-link');
     aboutUsLink.textContent = 'About Us';
+    aboutUsLink.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveLink(aboutUsLink);
+        loadAboutPage();
+    });
 
     const contactLink = document.createElement('a');
     contactLink.classList.add('nav-link');
