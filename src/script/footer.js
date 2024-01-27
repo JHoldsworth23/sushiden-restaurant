@@ -1,5 +1,4 @@
 const footerComponent = () => {
-    const content = document.querySelector('#content');
     const footer = document.createElement('div');
     footer.classList.add('footer-section');
 
@@ -9,9 +8,7 @@ const footerComponent = () => {
         <a href="https://github.com/JHoldsworth23" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
     `;
 
-    content.appendChild(footer);
-
-    return content;
+    return footer;
 }
 
 export default footerComponent;
