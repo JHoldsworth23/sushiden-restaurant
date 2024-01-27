@@ -9,9 +9,12 @@ const homeNavComponent = () => {
     linkDiv.classList.add('links');
 
     const homeLink = document.createElement('a');
-    homeLink.classList.add('home-link');
+    homeLink.classList.add('nav-link');
+    homeLink.id = 'home-link';
     homeLink.innerHTML = '<div></div>';
-    homeLink.addEventListener('click', () => {
+    homeLink.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveLink(homeLink);
         loadHomePage();
     });
 
@@ -22,14 +25,18 @@ const homeNavComponent = () => {
     const contactLink = document.createElement('a');
     contactLink.classList.add('nav-link');
     contactLink.textContent = 'Hours & Locations';
-    contactLink.addEventListener('click', () => {
+    contactLink.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveLink(contactLink);
         loadLocationPage();
     });
 
     const menuLink = document.createElement('a');
     menuLink.classList.add('nav-link');
     menuLink.textContent = 'Menu';
-    menuLink.addEventListener('click', () => {
+    menuLink.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveLink(menuLink);
         loadMenuPage();
     });
 
@@ -47,6 +54,18 @@ const createMain = () => {
     return main;
 }
 
+const setActiveLink = (current) => {
+    const anchors = Array.from(document.querySelectorAll('a')).slice(0, -1);
+
+    anchors.forEach(link => {
+        if (link !== this) {
+            link.classList.remove('active');
+        }
+    });
+
+    current.classList.add('active');
+}
+
 function initialiseWebpage() {
     const content = document.getElementById('content');
 
@@ -54,6 +73,7 @@ function initialiseWebpage() {
     content.appendChild(createMain());
     content.appendChild(footerComponent());
 
+    setActiveLink(document.querySelector('a'));
     loadHomePage();
 }
 

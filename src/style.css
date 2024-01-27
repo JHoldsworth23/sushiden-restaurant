@@ -19,12 +19,12 @@ body {
     margin: 16px auto;
 }
 
-.home-link {
+#home-link {
     position: relative;
     right: 50px;
 }
 
-.home-link > div {
+#home-link > div {
     width: 40px;
     height: 40px;
     background-image: url('./image/salmon-sushi-logo.png');
@@ -32,8 +32,16 @@ body {
     cursor: pointer;
 }
 
-.home-link > div:hover {
+#home-link > div:hover {
     filter: contrast(200%);
+}
+
+#home-link::after {
+    background-color: var(--cream-color);
+}
+
+#home-link.active {
+    display: none;
 }
 
 .nav-link {
@@ -63,6 +71,10 @@ body {
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: center;
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
 }
 
 .home-background, .location-background, .menu-background {
