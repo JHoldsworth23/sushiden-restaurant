@@ -29,6 +29,7 @@ body {
     height: 40px;
     background-image: url('./image/salmon-sushi-logo.png');
     background-size: cover;
+    cursor: pointer;
 }
 
 .home-link > div:hover {
