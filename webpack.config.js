@@ -1,5 +1,4 @@
 const path = require('path');
-// HTML Webpack Plugin and template
 
 module.exports = {
     mode: 'development',
