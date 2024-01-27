@@ -78,7 +78,7 @@ body {
     transform: scaleX(1);
 }
 
-.home-background, .location-background, .menu-background {
+.home-background, .about-background, .location-background, .menu-background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ body {
     background-image: url('./image/restaurant.jpg');
 }
 
-.menu-background {
+.about-background, .menu-background {
     flex-direction: column;
     background-image: url('./image/salmon-meat.jpg');
     filter: contrast(120%);
